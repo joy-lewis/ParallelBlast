@@ -6,7 +6,13 @@ Chair of Compilers and Programming Languages \
 Course Lecturer: Prof. Dr. Michel Steuwer \
 
 ### Execute NCBIs sequential algorithm on CPU:
-$ ./blastn -query query.fasta -db db_test -num_threads 8 -outfmt 6 -out results.txt
+$ ./blastn -query query.fasta -db db_test -num_threads 8 \
+  -outfmt 6 \
+  -word_size 4 \
+  -evalue 1e-5 \
+  -max_target_seqs 20 \
+  -max_hsps 2 \
+  -out results.txt
 
 ### Results file description:
 1   qseqid    Query sequence ID \
