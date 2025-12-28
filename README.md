@@ -8,7 +8,7 @@ Course Lecturer: Prof. Dr. Michel Steuwer \
 ### Execute NCBIs sequential algorithm on CPU:
 $ ./blastn -query query.fasta -db db_test -num_threads 8 \
   -outfmt 6 \
-  -word_size 4 \
+  -word_size 8 \
   -evalue 1e-5 \
   -max_target_seqs 20 \
   -max_hsps 2 \
