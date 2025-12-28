@@ -9,7 +9,7 @@ Course Lecturer: Prof. Dr. Michel Steuwer
 $ ./blastn -query query.fasta -db db_test -num_threads 8 -outfmt 6 -out results.txt
 
 ### Results file description:
-1   qseqid    Query sequence ID
+1   qseqid    Query sequence ID \
 2   sseqid    Subject (database) sequence ID
 3   pident    Percentage of identical matches
 4   length    Alignment length
